@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-outandabout {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+.container-outandabout section {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellowgreen; */
+}
+
+/* .container-outandabout section:nth-child(2) {
+  background-color: red;
+} */
+
+/* .container-outandabout section:nth-child(3) {
+  background-color: white;
+}
+
+.container-outandabout section:nth-child(4) {
+  background-color: peru;
+} */
+
+.container-outandabout .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* h1 {
+  font-size: 1rem;
+} */
+
+p {
+  font-style: 1rem;
+  line-height: 24px;
+  padding-top: 10px;
+}
+
+/* Text-Title */
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 60px;
+  /* width: 60%;
+  height: 80vh;
+  font-size: 36px;
+  line-height: 2; */
+}
+
+@media (min-width: 280px) and (max-width: 590px) {
+  .container-2 {
+    font-size: 20px;
+    width: 85%;
+    height: 60vh;
+    line-height: 1.5;
+  }
+}
+
+.raised-e {
+  position: relative;
+  top: -2px; /* Adjust as needed */
+}
+
+.faded-w {
+  opacity: 0.5; /* Adjust for desired "faded" effect */
+}
+/* End Text-Title */
+
+/* Grid Container */
+/* Editorial */
+.panel.yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  /* border: solid 1px red; */
+}
+
+/* Grid Container */
+.gallery-1 {
+  height: 85vh;
+  width: 85%;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template: repeat(auto-fill, 1fr) / repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "b b d g"
+    "f f e e"
+    "f f h h"
+    "a c h h";
+  gap: 10px;
+}
+
+.img.a1 {
+  background-image: url(./img/Editorial/000038110028.jpg);
+  grid-area: a;
+}
+
+.img.b1 {
+  background-image: url(./img/Editorial/Merrey30.jpg);
+  grid-area: b;
+}
+
+.img.c1 {
+  background-image: url(./img/Editorial/14.jpg);
+  grid-area: c;
+}
+
+.img.d1 {
+  background-image: url(./img/Editorial/wandd.jpg);
+  grid-area: d;
+}
+
+.img.e1 {
+  background-image: url(./img/Editorial/ChinaE_Eva-Lili-60.jpg);
+  grid-area: e;
+}
+
+.img.f1 {
+  background-image: url(./img/Editorial/Bertie.jpg);
+  grid-area: f;
+}
+
+.img.g1 {
+  background-image: url(./img/Editorial/img016.jpg);
+  grid-area: g;
+}
+
+.img.h1 {
+  background-image: url(./img/Editorial/img026.jpg);
+  grid-area: h;
+}
+/* End Editorial */
+.gallery {
+  height: 85vh;
+  width: 85%;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template: repeat(auto-fill, 1fr) / repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "f f d c"
+    "f f e c"
+    "a g b b"
+    "a h b b";
+  gap: 10px;
+}
+
+a.img {
+  width: 100%;
+  /* min-height: 275px; */
+  background-position: center;
+  background-size: cover;
+}
+
+.img.a {
+  background-image: url(./img/Editorial/47590034.JPG);
+  grid-area: a;
+}
+
+.img.b {
+  background-image: url(./img/Editorial/img032.jpg);
+  grid-area: b;
+}
+
+.img.c {
+  background-image: url(./img/Editorial/izzy4.jpg);
+  grid-area: c;
+}
+
+.img.d {
+  background-image: url(./img/Editorial/ROOM9.jpg);
+  grid-area: d;
+}
+
+.img.e {
+  background-image: url(./img/Editorial/000038110032.jpg);
+  grid-area: e;
+}
+
+.img.f {
+  background-image: url(./img/Editorial/img008.jpg);
+  grid-area: f;
+}
+
+.img.g {
+  background-image: url(./img/Editorial/ChinaE_Eva-Lili-5.jpg);
+  grid-area: g;
+}
+
+.img.h {
+  background-image: url(./img/Editorial/polly.jpg);
+  grid-area: h;
+}
+
+/* Commission */
+.gallery-2 {
+  height: 85vh;
+  width: 85%;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template: repeat(auto-fill, 1fr) / repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "f f d c"
+    "f f e c"
+    "a g b b"
+    "a h b b";
+  gap: 10px;
+}
+
+a.img {
+  width: 100%;
+  /* min-height: 275px; */
+  background-position: center;
+  background-size: cover;
+}
+
+.panel.white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  /* background: #fff; */
+  /* border: solid 1px red; */
+}
+
+.img.a2 {
+  background-image: url(./img/Commission/000011.JPG);
+  grid-area: a;
+}
+
+.img.b2 {
+  background-image: url(./img/Commission/BAG5g.jpg);
+  grid-area: b;
+}
+
+.img.c2 {
+  background-image: url(./img/Commission/000065710008.jpg);
+  grid-area: c;
+}
+
+.img.d2 {
+  background-image: url(./img/Commission/000060850027.jpg);
+  grid-area: d;
+}
+
+.img.e2 {
+  background-image: url(./img/Commission/000060850005.jpg);
+  grid-area: e;
+}
+
+.img.f2 {
+  background-image: url(./img/Commission/000060850015.jpg);
+  grid-area: f;
+}
+
+.img.g2 {
+  background-image: url(./img/Commission/000065710024.jpg);
+  grid-area: g;
+}
+
+.img.h2 {
+  background-image: url(./img/Commission/BAG5i.jpg);
+  grid-area: h;
+}
+
+/* GoSees */
+.gallery-3 {
+  height: 85vh;
+  width: 85%;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template: repeat(auto-fill, 1fr) / repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "f f d c"
+    "f f e c"
+    "a g b b"
+    "a h b b";
+  gap: 10px;
+}
+
+a.img {
+  width: 100%;
+  /* min-height: 275px; */
+  background-position: center;
+  background-size: cover;
+}
+
+.panel.purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  /* background: #fff; */
+  /* border: solid 1px red; */
+}
+
+.img.a3 {
+  background-image: url(./img/Commission/000065710025.jpg);
+  grid-area: a;
+}
+
+.img.b3 {
+  background-image: url(./img/Commission/000060850014.jpg);
+  grid-area: b;
+}
+
+.img.c3 {
+  background-image: url(./img/Commission/000065710008.jpg);
+  grid-area: c;
+}
+
+.img.d3 {
+  background-image: url(./img/Commission/BAG5i.jpg);
+  grid-area: d;
+}
+
+.img.e3 {
+  background-image: url(./img/GoSees/hfirns.jpg);
+  grid-area: e;
+}
+
+.img.f3 {
+  background-image: url(./img/GoSees/000065730023.jpg);
+  grid-area: f;
+}
+
+.img.g3 {
+  background-image: url(./img/GoSees/31340030.jpg);
+  grid-area: g;
+}
+
+.img.h3 {
+  background-image: url(./img/GoSees/94750009.JPG);
+  grid-area: h;
+}
+/* End GoSees */
+
+/* End Commission */
